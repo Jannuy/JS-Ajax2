@@ -1,5 +1,9 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue' // 1. Impordi plugin
 
-const app = createApp(App);
-app.mount("#app");
+export default defineConfig({
+  plugins: [
+    vue() // 2. Lisa see siia listi
+  ]
+})
+
