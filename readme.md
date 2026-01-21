@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Suvaline tekst
-
-aaaaa
+=======
+Suvaline tekst
