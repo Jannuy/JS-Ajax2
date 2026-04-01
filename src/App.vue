@@ -1,20 +1,15 @@
-<script setup>
-import { ref } from 'vue';
-import Modal from './components/Modal.vue';
- 
- 
- 
-let modal1Active = ref(false);
- 
-</script>
- 
 <template>
-    <div class="container">
-      <button class="button is-primary" @click="modal1Active=true">Open modal</button>
- 
- 
-      <Modal :active="modal1Active" @close="modal1Active=false"></Modal>
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        <li><router-link to="/">ToDo</router-link></li>
+        <li><router-link to="/modals">Modals</router-link></li>
+        <li><router-link to="/messages">Messages</router-link></li>
+        <li><router-link to="/rickandmorty">Rick and Morty</router-link></li>
+      </ul>
     </div>
+ 
+    <router-view />
+  </div>
 </template>
  
-<style></style>
